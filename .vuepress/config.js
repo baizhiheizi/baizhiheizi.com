@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/baizhiheizi.com/',
+  base: '/',
   title: 'baizhiheizi.com',
   themeConfig: {
     navbar: false,
