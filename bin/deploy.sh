@@ -21,13 +21,13 @@ if [[ ${GIHUB_TOKEN} ]]; then
   git add . && \
   git commit -m "vuepress build from Action ${GITHUB_SHA}" && \
   git show-ref && \
-  git push --force $remote_repo master:gh-pages
+  git push --force $remote_repo master:master
 else
   # for local deploy
   git init
   git add -A
   git commit -m 'vuepress build from local'
-  git push -f git@github.com:baizhiheizi/baizhiheizi.com.git master:gh-pages
+  git push -f git@github.com:baizhiheizi/baizhiheizi.com.git master:master
 fi
 
 rm -fr .git
